@@ -1,3 +1,31 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
 body {
   background-color: bisque;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+}
+
+.main-form {
+  width: auto;
+}
+
+input,
+select {
+  margin-bottom: 15px;
+}
+label {
+  margin-bottom: 5px;
 }
