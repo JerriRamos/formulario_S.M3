@@ -7,52 +7,49 @@
     <title>Formulario</title>
   </head>
   <body>
-    <form>
-      <div>
-        <label for="nome">Nome:</label><br />
-        <input type="text" id="nome>" />
+    <div class="main-container">
+      <div class="main-form">
+        <form>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome>" />
+
+          <label for="aplido">Aplido:</label>
+          <input type="text" id="aplido" />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" />
+
+          <label form="password">Password:</label>
+          <input type="password" id="password" />
+
+          <div>
+            <label for="sexo">Sexo:</label>
+            <input type="radio" id="masc" name="sexo" />
+            <label for="masc">M</label>
+            <input type="radio" id="fem" name="sexo" />
+            <label for="fem">F</label>
+            <input type="radio" id="outro" name="sexo" />
+            <label for="outro">Outro</label>
+          </div>
+
+          <label for="ilha">Ilha:</label>
+          <select id="ilha" name="ilhas">
+            <option value="SA">S.Antao</option>
+            <option value="SV">S.Vicente</option>
+            <option value="SL">S.Luzia</option>
+            <option value="SN">S.Nicolau</option>
+            <option value="SL">SaL</option>
+            <option value="BV">Boa Vista</option>
+            <option value="MA">Maio</option>
+            <option value="ST">Santiago</option>
+            <option value="FG">Fogo</option>
+            <option value="BR">Brava</option>
+          </select>
+
+          <input type="submit" name="b1" value="Submit" />
+          <input type="reset" name="b2" value="Reset" />
+        </form>
       </div>
-      <div>
-        <label for="aplido">Aplido:</label><br />
-        <input type="text" id="aplido" />
-      </div>
-      <div>
-        <label for="email">Email:</label><br />
-        <input type="email" id="email" />
-      </div>
-      <div>
-        <label form="password">Password:</label><br />
-        <input type="password" id="password" />
-      </div>
-      <div>
-        <label for="sexo">Sexo:</label><br />
-        <input type="radio" id="masc" name="sexo" />
-        <label for="masc">M</label><br />
-        <input type="radio" id="fem" name="sexo" />
-        <label for="fem">F</label><br />
-        <input type="radio" id="outro" name="sexo" />
-        <label for="outro">Outro</label>
-      </div>
-      <div>
-        <label for="ilha">Ilha:</label>
-        <select id="ilha" name="ilhas">
-          <option value="SA">S.Antao</option>
-          <option value="SV">S.Vicente</option>
-          <option value="SL">S.Luzia</option>
-          <option value="SN">S.Nicolau</option>
-          <option value="SL">SaL</option>
-          <option value="BV">Boa Vista</option>
-          <option value="MA">Maio</option>
-          <option value="ST">Santiago</option>
-          <option value="FG">Fogo</option>
-          <option value="BR">Brava</option>
-        </select>
-      </div>
-      <br />
-      <div>
-        <input type="submit" name="b1" value="Submit" />
-        <input type="reset" name="b2" value="Reset" />
-      </div>
-    </form>
+    </div>
   </body>
 </html>
