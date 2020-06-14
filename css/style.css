@@ -28,6 +28,10 @@ label {
   margin-bottom: 5px;
 }
 
+#sexo {
+  margin-bottom: 15px;
+}
+
 .main-container {
   display: flex;
   justify-content: center; /*centro da linha*/
