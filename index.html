@@ -9,31 +9,32 @@
   <body>
     <div class="main-container">
       <div class="main-form">
-        <form>
+        <form name="formulario" id="formulario">
           <label for="nome">Nome:</label>
-          <input type="text" id="nome>" />
+          <input type="text" id="nome" name="nome" />
 
-          <label for="aplido">Aplido:</label>
-          <input type="text" id="aplido" />
+          <label for="apelido">Apelido:</label>
+          <input type="text" id="apelido" name="apelido" />
 
           <label for="email">Email:</label>
-          <input type="email" id="email" />
+          <input type="email" id="email" name="email" />
 
           <label form="password">Password:</label>
-          <input type="password" id="password" />
+          <input type="password" id="password" name="password" />
 
-          <div>
+          <div id="sexo">
             <label for="sexo">Sexo:</label>
-            <input type="radio" id="masc" name="sexo" />
+            <input type="radio" id="masc" name="m" />
             <label for="masc">M</label>
-            <input type="radio" id="fem" name="sexo" />
+            <input type="radio" id="fem" name="f" />
             <label for="fem">F</label>
-            <input type="radio" id="outro" name="sexo" />
+            <input type="radio" id="outro" name="ot" />
             <label for="outro">Outro</label>
           </div>
 
           <label for="ilha">Ilha:</label>
           <select id="ilha" name="ilhas">
+            <option value="" hidden>Seleciona uma ilha</option>
             <option value="SA">S.Antao</option>
             <option value="SV">S.Vicente</option>
             <option value="SL">S.Luzia</option>
@@ -46,10 +47,11 @@
             <option value="BR">Brava</option>
           </select>
 
-          <input type="submit" name="b1" value="Submit" />
+          <input type="submit" name="b1" value="Submit" onclick="validar()" />
           <input type="reset" name="b2" value="Reset" />
         </form>
       </div>
     </div>
   </body>
+  <script src="js/validar_form.js"></script>
 </html>
